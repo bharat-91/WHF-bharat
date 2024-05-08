@@ -11,8 +11,8 @@ const app = express()
 app.use(express.json())
 
 ConnectDataBase()
-app.listen(process.env.PORT_NUMBER||6000, () => {
-    console.log(`Server is running on http://localhost:${process.env.PORT_NUMBER||6000}`);
+app.listen(process.env.PORT_NUMBER||3000, () => {
+    console.log(`Server is running on http://localhost:${process.env.PORT_NUMBER||3000}`);
 })
 
 app.get('/',(req:Request, res:Response) =>{
